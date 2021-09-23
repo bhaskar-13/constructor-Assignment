@@ -1,0 +1,31 @@
+class bankAccount{
+    constructor(name,accountNumber,balance)
+    {
+        this.name=name;
+        this.accountNumber=accountNumber;
+        this.balance=balance;
+    }
+    
+    check_balance()
+    {
+        return this.balance;
+    }
+    
+    withdrwal(value)
+    {
+        this.balance=this.balance-value;
+        return this.balance;
+    }
+    
+    deposit(amount)
+    {
+        this.balance=this.balance+amount;
+        return this.balance;
+    }
+    
+}
+let Bhaskar=new bankAccount("Bhaskar",1234,100000);
+let Paresh=new bankAccount("Paresh",12345,200000);
+let Arun=new bankAccount("Bhaskar",123456,300000);
+
+console.log(Bhaskar.deposit(20000));
